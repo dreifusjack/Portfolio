@@ -12,6 +12,7 @@
   background-color: #0a192f;
   background-size: cover;
   background-position: center;
+  animation: fade-down 0.4s 0.3s backwards;
 }
 
 nav {
@@ -47,29 +48,27 @@ nav u1 li a:hover {
   color: #64ffda;
 }
 button {
-  border: none;
-  background-color: transparent;
-  padding: 12px 30px;
-  line-height: normal;
+  padding: 10px 20px;
   color: #64ffda;
   font-weight: bold;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   border-radius: 10px;
   border: 1px solid #64ffda;
   cursor: pointer;
+  box-shadow: 0 6px 33px #a8b2d1;
   margin-left: 20px;
 }
 button:hover {
-  color: black;
-  transform: scale(1.1);
+  transform: scale(1.15);
+  box-shadow: 0 6px 100px #a8b2d1;
 }
-nav div span button .test {
+nav div span button .resume {
   text-decoration: none;
 }
 
 .intro {
   padding: 8% 15%;
   width: 70%;
+  animation: fade-up 0.4s 0.3s backwards;
 }
 .intro p {
   color: #64ffda;
@@ -86,7 +85,7 @@ nav div span button .test {
 .intro h1 {
   color: white;
   font-size: 100px;
-  width: 110%;
+  width: 200%;
 }
 .intro .deets a {
   color: #64ffda;
@@ -95,4 +94,25 @@ nav div span button .test {
 }
 .intro .deets a:hover {
   text-decoration: underline;
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
