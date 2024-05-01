@@ -114,6 +114,51 @@ nav div span button .resume {
   margin-bottom: 5px;
   margin-left: 19px;
 }
+.contactSocials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7px;
+}
+.contactSocials ul {
+  position: relative;
+  display: flex;
+}
+.contactSocials ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.contactSocials ul li a {
+  text-decoration: none;
+}
+.contactSocials ul li a .fa {
+  font-size: 1em;
+  color: white;
+}
+.contactSocials ul li::before {
+  font-family: fontAwesome;
+  position: absolute;
+  font-size: 1em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  pointer-events: none;
+}
+.contactSocials ul li:nth-child(1)::before {
+  content: "\f08c";
+  color: #64ffda;
+  border-bottom: 3px solid #64ffda;
+}
+.contactSocials ul li:nth-child(2)::before {
+  content: "\f09b";
+  color: #64ffda;
+  border-bottom: 3px solid #64ffda;
+}
+.contactSocials ul li:hover::before {
+  height: 90%;
+}
 .contactInputs {
   width: 400px;
   height: 50px;
