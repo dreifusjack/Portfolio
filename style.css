@@ -8,6 +8,16 @@
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+::-webkit-scrollbar-thumb {
+  background: #17253b;
+  border-radius: 10px;
+}
 
 .navBar {
   height: 10vh;
@@ -19,7 +29,6 @@ html {
   position: fixed;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 nav {
   display: flex;
   align-items: center;
@@ -28,17 +37,14 @@ nav {
   padding-left: 10%;
   padding-right: 10%;
 }
-
 .logo {
   color: white;
   font-size: 28px;
 }
-
 span {
   color: #64ffda;
   font: arial;
 }
-
 nav u1 li {
   list-style-type: none;
   display: inline-block;
