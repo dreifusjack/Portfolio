@@ -5,6 +5,9 @@
   font-family: "Josefin Sans", sans-serif;
   background-color: #0a192f;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .navBar {
   height: 10vh;
@@ -13,13 +16,15 @@
   background-size: cover;
   background-position: center;
   animation: fade-down 0.4s 0.3s backwards;
+  position: fixed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -165,7 +170,7 @@ nav div span button .resume {
   border: none;
   padding-left: 20px;
   font-weight: 500;
-  color: #9b9a9a;
+  color: #0a192f;
   border-radius: 50px;
   background-color: white;
 }
@@ -178,6 +183,9 @@ nav div span button .resume {
   padding-top: 15px;
   border-radius: 20px;
   font-size: 13px;
+}
+.contactForm button {
+  margin-left: -2px;
 }
 
 @keyframes fade-down {
